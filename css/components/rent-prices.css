@@ -1,0 +1,72 @@
+.rent-prices {
+  padding: 96px 0 80px;
+  background: #111111;
+}
+
+.rent-prices__head {
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.rent-prices__title {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.rent-prices__subtitle {
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.rent-prices__table-wrap {
+  overflow: hidden;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+.rent-prices__table {
+  width: 100%;
+}
+
+.rent-prices__table th,
+.rent-prices__table td {
+  padding: 18px 24px;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.rent-prices__table thead th {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.rent-prices__table tbody td {
+  color: var(--color-white);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rent-prices__table tbody td:nth-child(2),
+.rent-prices__table tbody td:nth-child(3),
+.rent-prices__table tbody td:nth-child(4),
+.rent-prices__table thead th:nth-child(2),
+.rent-prices__table thead th:nth-child(3),
+.rent-prices__table thead th:nth-child(4) {
+  width: 18%;
+}
+
+.rent-prices__table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.rent-prices__table tbody td:nth-child(2) {
+  color: var(--color-text-muted);
+}

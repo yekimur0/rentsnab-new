@@ -1,0 +1,115 @@
+.guarantees {
+  padding: 96px 0 100px;
+  background: #0b0b0b;
+}
+
+.guarantees__head {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.guarantees__title {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.guarantees__subtitle {
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.guarantees__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.guarantees__card {
+  display: flex;
+  gap: 16px;
+  min-height: 112px;
+  padding: 22px 22px 20px;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+}
+
+.guarantees__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  color: var(--color-orange);
+  background: #2a1608;
+  border-radius: 10px;
+}
+
+.guarantees__name {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-white);
+}
+
+.guarantees__text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.guarantees__docs-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.guarantees__docs-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.guarantees__docs-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-orange);
+  transition: color var(--transition);
+}
+
+.guarantees__docs-link:hover {
+  color: var(--color-orange-hover);
+}
+
+.guarantees__certs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.guarantees__cert {
+  overflow: hidden;
+  background: #f4f1ea;
+  border-radius: 16px;
+}
+
+.guarantees__cert img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+}

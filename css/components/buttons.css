@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 12px;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+  white-space: nowrap;
+}
+
+.btn--orange {
+  color: var(--color-white);
+  background: var(--color-orange);
+}
+
+.btn--orange:hover {
+  background: var(--color-orange-hover);
+}
+
+.btn--outline {
+  color: var(--color-white);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.btn--outline:hover {
+  border-color: var(--color-white);
+  background: rgba(255, 255, 255, 0.06);
+}

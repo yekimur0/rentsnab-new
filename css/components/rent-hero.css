@@ -1,0 +1,241 @@
+.rent-hero {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  background: #1a120c;
+}
+
+.rent-hero__media {
+  position: absolute;
+  inset: 0;
+}
+
+.rent-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.rent-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 6, 4, 0.88) 0%,
+      rgba(8, 6, 4, 0.62) 42%,
+      rgba(8, 6, 4, 0.22) 72%,
+      rgba(8, 6, 4, 0.12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 6, 4, 0.12) 0%,
+      rgba(8, 6, 4, 0.08) 50%,
+      rgba(8, 6, 4, 0.45) 100%
+    );
+}
+
+.rent-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: center;
+  min-height: 620px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-white);
+}
+
+.rent-hero__title {
+  margin-bottom: 18px;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.rent-hero__text {
+  max-width: 680px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.rent-hero__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.rent-hero__pills li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-white);
+  background: var(--color-bg-pill);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+.rent-hero__pills li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  background: var(--color-orange);
+  border-radius: 50%;
+}
+
+.rent-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.rent-calc {
+  padding: 24px 22px 22px;
+  background: rgba(18, 18, 18, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+}
+
+.rent-calc__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.rent-calc__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.rent-calc__online {
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.rent-calc__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.rent-calc__field span {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.rent-calc__input,
+.rent-calc__select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-white);
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  outline: none;
+  appearance: none;
+}
+
+.rent-calc__select {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239a9a9a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.rent-calc__input::-webkit-outer-spin-button,
+.rent-calc__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.rent-calc__input:focus,
+.rent-calc__select:focus {
+  border-color: rgba(255, 107, 0, 0.5);
+}
+
+.rent-calc__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.rent-calc__result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  padding: 12px 14px;
+  margin: 6px 0 16px;
+  background: #111111;
+  border-radius: 12px;
+}
+
+.rent-calc__result span {
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--color-text-muted);
+}
+
+.rent-calc__result b {
+  font-size: 22px;
+  font-weight: 800;
+  white-space: nowrap;
+  color: var(--color-white);
+}
+
+.rent-calc__submit {
+  width: 100%;
+  min-height: 48px;
+}
+
+.rent-calc__note {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}

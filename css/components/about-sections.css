@@ -1,0 +1,492 @@
+/* ===== about-mission ===== */
+.about-mission {
+  padding: 84px 0;
+  background:
+    radial-gradient(
+      ellipse at center,
+      #17120f 0%,
+      #0d0d0f 60%,
+      #090909 100%
+    );
+}
+
+.about-mission__header {
+  max-width: 820px;
+  margin-bottom: 36px;
+}
+
+.about-mission__title {
+  margin-bottom: 14px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.05px;
+  color: #f3f0ea;
+}
+
+.about-mission__subtitle {
+  font-size: 16.5px;
+  line-height: 25px;
+  color: #b7b3ac;
+}
+
+.about-mission__grid {
+  display: flex;
+}
+
+.about-mission__card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 28px;
+  border-left: 1px solid #2c2c33;
+}
+
+.about-mission__card:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.about-mission__num {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.48;
+  letter-spacing: -0.45px;
+  color: #f5871f;
+}
+
+.about-mission__card-title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #f3f0ea;
+}
+
+.about-mission__card-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #b7b3ac;
+}
+
+/* ===== about-numbers ===== */
+.about-numbers {
+  padding: 72px 0;
+  background: #f4f1ec;
+}
+
+.about-numbers__header {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.about-numbers__title {
+  margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.05px;
+  color: #17161a;
+}
+
+.about-numbers__subtitle {
+  font-size: 16.5px;
+  line-height: 25px;
+  color: #57534c;
+}
+
+.about-numbers__grid {
+  display: flex;
+}
+
+.about-numbers__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-right: 20px;
+  border-right: 1px solid #e5dfd5;
+}
+
+.about-numbers__item + .about-numbers__item {
+  padding-left: 20px;
+}
+
+.about-numbers__item:last-child {
+  border-right: none;
+}
+
+.about-numbers__value {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.48;
+  letter-spacing: -0.54px;
+  color: #d9700f;
+}
+
+.about-numbers__label {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #57534c;
+}
+
+/* ===== about-timeline ===== */
+.about-timeline {
+  padding: 84px 0;
+  background:
+    radial-gradient(
+      ellipse at center,
+      #14100a 0%,
+      #0d0d0f 60%,
+      #090909 100%
+    );
+}
+
+.about-timeline__header {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.about-timeline__title {
+  margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.05px;
+  color: #f3f0ea;
+}
+
+.about-timeline__subtitle {
+  font-size: 16.5px;
+  line-height: 25px;
+  color: #b7b3ac;
+}
+
+.about-timeline__grid {
+  display: flex;
+}
+
+.about-timeline__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 18px;
+}
+
+.about-timeline__item:first-child {
+  padding-left: 0;
+}
+
+.about-timeline__dot {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.about-timeline__dot::before {
+  content: "";
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f5871f;
+}
+
+.about-timeline__dot::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, #f5871f 0%, rgba(245, 135, 31, 0.1) 100%);
+}
+
+.about-timeline__item:last-child .about-timeline__dot::after {
+  background: linear-gradient(to right, #f5871f 0%, transparent 100%);
+}
+
+.about-timeline__item-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #f3f0ea;
+}
+
+.about-timeline__item-text {
+  font-size: 13px;
+  line-height: 18px;
+  color: #b7b3ac;
+}
+
+/* ===== about-team ===== */
+.about-team {
+  padding: 92px 0;
+  background: #f4f1ec;
+}
+
+.about-team__header {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.about-team__title {
+  margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.05px;
+  color: #17161a;
+}
+
+.about-team__subtitle {
+  font-size: 16.5px;
+  line-height: 25px;
+  color: #57534c;
+}
+
+.about-team__grid {
+  display: flex;
+  border: 1px solid #e5dfd5;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.about-team__card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 30px 28px;
+  border-left: 1px solid #e5dfd5;
+}
+
+.about-team__card:first-child {
+  border-left: none;
+}
+
+.about-team__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #d9700f;
+  background: #fff1e6;
+  border: 1px solid #f0dbc2;
+  border-radius: 50%;
+}
+
+.about-team__role {
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #17161a;
+}
+
+.about-team__desc {
+  font-size: 13.5px;
+  line-height: 19px;
+  color: #57534c;
+}
+
+/* ===== about-lic ===== */
+.about-lic {
+  padding: 92px 0;
+  background: #141417;
+}
+
+.about-lic__header {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.about-lic__title {
+  margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.05px;
+  color: #f3f0ea;
+}
+
+.about-lic__subtitle {
+  font-size: 16.5px;
+  line-height: 25px;
+  color: #b7b3ac;
+}
+
+.about-lic__grid {
+  display: flex;
+  gap: 16px;
+}
+
+.about-lic__item {
+  flex: 1;
+  aspect-ratio: 307 / 300;
+  background: #ffffff;
+  border: 1px solid #2c2c33;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-lic__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== about-req ===== */
+.about-req {
+  padding: 92px 0;
+  background:
+    radial-gradient(
+      ellipse at center,
+      #14100a 0%,
+      #0d0d0f 60%,
+      #090909 100%
+    );
+}
+
+.about-req__title {
+  margin-bottom: 36px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1.05px;
+  color: #f3f0ea;
+}
+
+.about-req__grid {
+  display: flex;
+  gap: 20px;
+}
+
+.about-req__card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border: 1px solid #2c2c33;
+  border-radius: 18px;
+}
+
+.about-req__label {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  color: #ffa24d;
+}
+
+.about-req__row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.about-req__row dt {
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #807c75;
+}
+
+.about-req__row dd {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20.5px;
+  color: #f3f0ea;
+}
+
+/* ===== about-cta ===== */
+.about-cta {
+  padding: 72px 0;
+  background: #141417;
+}
+
+.about-cta__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 50px 56px;
+  background: linear-gradient(to right, #ff6a00, #f5871f);
+  border-radius: 24px;
+  box-shadow:
+    0 1px 1px rgba(122, 59, 0, 0.095),
+    0 2px 2px rgba(122, 59, 0, 0.095),
+    0 4px 4px rgba(122, 59, 0, 0.095),
+    0 7px 8px rgba(122, 59, 0, 0.095),
+    0 14px 16px rgba(122, 59, 0, 0.095),
+    0 29px 32px rgba(122, 59, 0, 0.095);
+}
+
+.about-cta__content {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-cta__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: -0.48px;
+  color: #1a1005;
+}
+
+.about-cta__text {
+  font-size: 15.5px;
+  line-height: 22px;
+  color: #3a2405;
+}
+
+.about-cta__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.about-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 60px;
+  padding: 19px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1a130b;
+  border-radius: 12px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.about-cta__btn svg {
+  color: #f5871f;
+}
+
+.about-cta__btn:hover {
+  background: #2a1f14;
+}
+
+.about-cta__phone {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #2a1a05;
+}
+
+.about-cta__phone a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

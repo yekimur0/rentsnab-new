@@ -1,0 +1,120 @@
+.footer {
+  padding: 48px 0 28px;
+  background: #111111;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 280px 1fr 220px;
+  gap: 40px;
+  padding-bottom: 32px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__about {
+  max-width: 240px;
+  margin: 16px 0 18px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.footer__socials a:hover {
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer__nav p,
+.footer__contacts p:first-child {
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.footer__nav a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.footer__nav a:hover {
+  color: var(--color-white);
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.footer__callback {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--color-orange);
+}
+
+.footer__hours,
+.footer__address {
+  margin-bottom: 6px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.footer__btn {
+  margin-top: 16px;
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.footer__bottom a {
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.footer__bottom a:hover {
+  color: var(--color-white);
+}

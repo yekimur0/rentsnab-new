@@ -1,0 +1,192 @@
+.rent-reviews {
+  padding: 96px 0 80px;
+  background: #0b0b0b;
+}
+
+.rent-reviews__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.rent-reviews__title {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.rent-reviews__rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+}
+
+.rent-reviews__ya {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-white);
+  background: #fc3f1d;
+  border-radius: 8px;
+}
+
+.rent-reviews__ya--sm {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.rent-reviews__score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-white);
+}
+
+.rent-reviews__score b {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.rent-reviews__stars {
+  color: var(--color-orange);
+  letter-spacing: 1px;
+}
+
+.rent-reviews__count {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.rent-reviews__all {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-orange);
+  white-space: nowrap;
+}
+
+.rent-reviews__all:hover {
+  color: var(--color-orange-hover);
+}
+
+.rent-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.rent-reviews__card {
+  min-height: 210px;
+  padding: 22px 22px 20px;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+.rent-reviews__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rent-reviews__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rent-reviews__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-white);
+  background: #2a2a2a;
+  border-radius: 50%;
+}
+
+.rent-reviews__user b {
+  display: block;
+  font-size: 15px;
+  color: var(--color-white);
+}
+
+.rent-reviews__user span {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.rent-reviews__card .rent-reviews__stars {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.rent-reviews__text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.rent-partners {
+  padding: 48px 0 64px;
+  background: #f4f1ea;
+}
+
+.rent-partners__label {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8a8a8a;
+}
+
+.rent-partners__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.rent-partners__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 64px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  background: #fbfaf7;
+  border-radius: 16px;
+}
+
+.rent-partners__item span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-orange);
+  background: #fff1e6;
+  border-radius: 8px;
+}

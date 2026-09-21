@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Объекты — Северянин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="container topbar__inner">
+          <p class="topbar__location">
+            Аренда и продажа опалубки в Москве и области
+          </p>
+          <div class="topbar__right">
+            <nav class="topbar__nav">
+              <a href="about.html">О компании</a>
+              <a href="#">Как мы работаем</a>
+              <a href="#">Доставка</a>
+              <a href="objects.html">Объекты</a>
+              <a href="#">Контакты</a>
+            </nav>
+            <span class="topbar__hours">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="7"
+                  cy="7"
+                  r="6"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M7 3.5V7L9.2 8.5"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              с 9:00 до 18:00, Пн–Пт
+            </span>
+            <div class="topbar__socials">
+              <a class="topbar__social" href="#" aria-label="Telegram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21.5 3.2 18.3 20.3c-.24 1.07-.87 1.33-1.76.83l-4.86-3.58-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.94 9-8.13c.39-.35-.09-.54-.6-.2l-11.13 7-4.8-1.5c-1.04-.32-1.06-1.04.22-1.54L20.2 2.7c.87-.32 1.63.21 1.3.5Z"
+                  />
+                </svg>
+              </a>
+              <a class="topbar__social" href="#" aria-label="WhatsApp">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02Zm-7.01 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.85 5.8 2.4a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.68 8.24-8.17 8.24Zm4.5-6.16c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.10-.23-.17-.48-.29Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container header__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__icon" src="image/logo.svg" alt="" />
+            <span class="logo__text">
+              <span class="logo__name">Северянин</span>
+              <span class="logo__desc">Аренда опалубки</span>
+            </span>
+          </a>
+
+          <ul class="header__benefits">
+            <li class="header__benefit">
+              <b>200 000 м²</b>
+              <span>собственный парк</span>
+            </li>
+            <li class="header__benefit">
+              <b>день в день</b>
+              <span>доставка по МО</span>
+            </li>
+            <li class="header__benefit">
+              <b>бесплатно</b>
+              <span>инженерный расчёт</span>
+            </li>
+          </ul>
+
+          <div class="header__contacts">
+            <a class="header__phone" href="tel:+74951207712"
+              >+7 (495) 120-77-12</a
+            >
+            <a class="header__callback" href="#">Заказать звонок</a>
+          </div>
+
+          <a class="btn btn--orange" href="#">Рассчитать за 1 час</a>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="container nav__inner">
+          <ul class="nav__list">
+            <li><a href="rent.html">Аренда опалубки</a></li>
+            <li><a href="#">Продажа опалубки</a></li>
+            <li><a href="#">Строительные леса</a></li>
+            <li><a href="#">Спецтехника</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Оплата</a></li>
+          </ul>
+          <a class="nav__offer" href="#">
+            Коммерческое предложение
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 8H13M13 8L9 4M13 8L9 12"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="obj-hero">
+      <div class="obj-hero__media"></div>
+      <div class="container obj-hero__inner">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Объекты</span>
+        </nav>
+        <h1 class="obj-hero__title">Объекты на нашей опалубке</h1>
+        <p class="obj-hero__text">
+          Жилые комплексы, промышленные и инфраструктурные объекты Москвы и
+          области, обеспеченные оборотной опалубкой, лесами и оснасткой.
+        </p>
+        <ul class="obj-hero__stats">
+          <li>
+            <b>800+</b>
+            <span>объектов обеспечено</span>
+          </li>
+          <li>
+            <b>24</b>
+            <span>региона доставки</span>
+          </li>
+          <li>
+            <b>200 000 м²</b>
+            <span>обслуженный парк</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="s-cases">
+      <div class="container">
+        <div class="s-cases__header">
+          <h2 class="s-cases__title">Реализованные объекты</h2>
+          <p class="s-cases__subtitle">
+            Подборка объектов по типам конструкций. Фото и данные приведены для
+            примера.
+          </p>
+        </div>
+
+        <div class="obj-filters">
+          <button
+            class="obj-filters__btn obj-filters__btn--active"
+            type="button"
+            data-filter="all"
+          >
+            Все объекты
+          </button>
+          <button class="obj-filters__btn" type="button" data-filter="living">
+            Жилые
+          </button>
+          <button
+            class="obj-filters__btn"
+            type="button"
+            data-filter="industrial"
+          >
+            Промышленные
+          </button>
+          <button class="obj-filters__btn" type="button" data-filter="infra">
+            Инфраструктура
+          </button>
+          <button
+            class="obj-filters__btn"
+            type="button"
+            data-filter="commercial"
+          >
+            Коммерческие
+          </button>
+        </div>
+
+        <div class="obj-grid">
+          <article class="obj-card" data-category="living">
+            <div class="obj-card__image">
+              <span class="obj-card__badge">Жилые</span>
+              <img src="image/object-jk.jpg" alt="ЖК бизнес-класса" />
+            </div>
+            <div class="obj-card__body">
+              <h3 class="obj-card__title">ЖК бизнес-класса</h3>
+              <p class="obj-card__location">Москва</p>
+              <dl class="obj-card__data">
+                <div class="obj-card__row">
+                  <dt>Опалубка</dt>
+                  <dd>Стеновая + перекрытий</dd>
+                </div>
+                <div class="obj-card__row">
+                  <dt>Объём</dt>
+                  <dd>12 000 м²</dd>
+                </div>
+              </dl>
+              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
+            </div>
+          </article>
+
+          <article class="obj-card" data-category="industrial">
+            <div class="obj-card__image">
+              <span class="obj-card__badge">Промышленные</span>
+              <img
+                src="image/object-logistic.jpg"
+                alt="Логистический комплекс"
+              />
+            </div>
+            <div class="obj-card__body">
+              <h3 class="obj-card__title">Логистический комплекс</h3>
+              <p class="obj-card__location">Московская область</p>
+              <dl class="obj-card__data">
+                <div class="obj-card__row">
+                  <dt>Опалубка</dt>
+                  <dd>Колонн + перекрытий</dd>
+                </div>
+                <div class="obj-card__row">
+                  <dt>Объём</dt>
+                  <dd>8 000 м²</dd>
+                </div>
+              </dl>
+              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
+            </div>
+          </article>
+
+          <article class="obj-card" data-category="infra">
+            <div class="obj-card__image">
+              <span class="obj-card__badge">Инфраструктура</span>
+              <img src="image/object-infra.jpg" alt="Мостовой переход" />
+            </div>
+            <div class="obj-card__body">
+              <h3 class="obj-card__title">Мостовой переход</h3>
+              <p class="obj-card__location">Регион РФ</p>
+              <dl class="obj-card__data">
+                <div class="obj-card__row">
+                  <dt>Опалубка</dt>
+                  <dd>Мостовая + фундамента</dd>
+                </div>
+                <div class="obj-card__row">
+                  <dt>Объём</dt>
+                  <dd>спецпроект</dd>
+                </div>
+              </dl>
+              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
+            </div>
+          </article>
+
+          <article class="obj-card" data-category="commercial">
+            <div class="obj-card__image">
+              <span class="obj-card__badge">Коммерческие</span>
+              <img src="image/object-mall.jpg" alt="Торговый центр" />
+            </div>
+            <div class="obj-card__body">
+              <h3 class="obj-card__title">Торговый центр</h3>
+              <p class="obj-card__location">Москва</p>
+              <dl class="obj-card__data">
+                <div class="obj-card__row">
+                  <dt>Опалубка</dt>
+                  <dd>Перекрытий + колонн</dd>
+                </div>
+                <div class="obj-card__row">
+                  <dt>Объём</dt>
+                  <dd>6 500 м²</dd>
+                </div>
+              </dl>
+              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
+            </div>
+          </article>
+
+          <article class="obj-card" data-category="industrial">
+            <div class="obj-card__image">
+              <span class="obj-card__badge">Промышленные</span>
+              <img src="image/object-plant.jpg" alt="Производственный цех" />
+            </div>
+            <div class="obj-card__body">
+              <h3 class="obj-card__title">Производственный цех</h3>
+              <p class="obj-card__location">Московская область</p>
+              <dl class="obj-card__data">
+                <div class="obj-card__row">
+                  <dt>Опалубка</dt>
+                  <dd>Стеновая + фундамента</dd>
+                </div>
+                <div class="obj-card__row">
+                  <dt>Объём</dt>
+                  <dd>5 000 м²</dd>
+                </div>
+              </dl>
+              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
+            </div>
+          </article>
+
+          <article class="obj-card" data-category="commercial">
+            <div class="obj-card__image">
+              <span class="obj-card__badge">Коммерческие</span>
+              <img
+                src="image/object-parking.jpg"
+                alt="Многоуровневый паркинг"
+              />
+            </div>
+            <div class="obj-card__body">
+              <h3 class="obj-card__title">Многоуровневый паркинг</h3>
+              <p class="obj-card__location">Москва</p>
+              <dl class="obj-card__data">
+                <div class="obj-card__row">
+                  <dt>Опалубка</dt>
+                  <dd>Перекрытий на стойках</dd>
+                </div>
+                <div class="obj-card__row">
+                  <dt>Объём</dt>
+                  <dd>9 000 м²</dd>
+                </div>
+              </dl>
+              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="obj-pagination">
+          <button
+            class="obj-pagination__item obj-pagination__item--active"
+            type="button"
+          >
+            1
+          </button>
+          <button class="obj-pagination__item" type="button">2</button>
+          <button class="obj-pagination__item" type="button">3</button>
+          <button class="obj-pagination__item" type="button">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="rent-reviews">
+      <div class="container">
+        <div class="rent-reviews__head">
+          <div>
+            <h2 class="rent-reviews__title">Отзывы клиентов</h2>
+            <div class="rent-reviews__rating">
+              <span class="rent-reviews__ya">Я</span>
+              <div>
+                <p class="rent-reviews__score">
+                  Яндекс
+                  <b>4.9</b>
+                  <span class="rent-reviews__stars" aria-hidden="true"
+                    >★★★★★</span
+                  >
+                </p>
+                <p class="rent-reviews__count">38 отзывов на Яндекс Картах</p>
+              </div>
+            </div>
+          </div>
+          <a class="rent-reviews__all" href="#">Смотреть все на Яндексе →</a>
+        </div>
+
+        <div class="rent-reviews__grid">
+          <article class="rent-reviews__card">
+            <div class="rent-reviews__top">
+              <div class="rent-reviews__user">
+                <span class="rent-reviews__avatar">АК</span>
+                <div>
+                  <b>Артём К.</b>
+                  <span>2 недели назад</span>
+                </div>
+              </div>
+              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
+            </div>
+            <p class="rent-reviews__stars">★★★★★</p>
+            <p class="rent-reviews__text">
+              Привезли опалубку в день заявки, инженер помог с раскладкой на
+              сложном узле. Монолит сдали без простоев.
+            </p>
+          </article>
+
+          <article class="rent-reviews__card">
+            <div class="rent-reviews__top">
+              <div class="rent-reviews__user">
+                <span class="rent-reviews__avatar">СМ</span>
+                <div>
+                  <b>Сергей М.</b>
+                  <span>месяц назад</span>
+                </div>
+              </div>
+              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
+            </div>
+            <p class="rent-reviews__stars">★★★★★</p>
+            <p class="rent-reviews__text">
+              Работаем как юрлицо без залога и с отсрочкой. Парк большой,
+              докомплект возят быстро под график стройки.
+            </p>
+          </article>
+
+          <article class="rent-reviews__card">
+            <div class="rent-reviews__top">
+              <div class="rent-reviews__user">
+                <span class="rent-reviews__avatar">ДВ</span>
+                <div>
+                  <b>Дмитрий В.</b>
+                  <span>2 месяца назад</span>
+                </div>
+              </div>
+              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
+            </div>
+            <p class="rent-reviews__stars">★★★★★</p>
+            <p class="rent-reviews__text">
+              Взяли в аренду вместо покупки и сэкономили на хранении и ремонте.
+              Всё прозрачно по договору.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="obj-cta">
+      <div class="container">
+        <div class="obj-cta__box">
+          <div class="obj-cta__content">
+            <h2 class="obj-cta__title">Ваш объект — следующий в портфолио</h2>
+            <p class="obj-cta__text">
+              Пришлите проект или опишите объект — рассчитаем опалубку, комплект
+              и поставку под ваш график.
+            </p>
+          </div>
+          <div class="obj-cta__actions">
+            <a class="obj-cta__btn" href="#">
+              Обсудить объект
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 8H13M13 8L9 4M13 8L9 12"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <span class="obj-cta__phone">
+              или звоните
+              <a href="tel:+74951207712">+7 (495) 120-77-12</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="logo" href="index.html">
+              <img class="logo__icon" src="image/logo.svg" alt="" />
+              <span class="logo__text">
+                <span class="logo__name">Северянин</span>
+                <span class="logo__desc">Аренда опалубки</span>
+              </span>
+            </a>
+            <p class="footer__about">
+              Аренда и продажа щитовой опалубки, строительных лесов и
+              спецтехники в Москве и области. Собственный парк 200 000 м².
+            </p>
+            <div class="footer__socials">
+              <a href="#" aria-label="Telegram">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21.5 3.2 18.3 20.3c-.24 1.07-.87 1.33-1.76.83l-4.86-3.58-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.94 9-8.13c.39-.35-.09-.54-.6-.2l-11.13 7-4.8-1.5c-1.04-.32-1.06-1.04.22-1.54L20.2 2.7c.87-.32 1.63.21 1.3.5Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02Zm-7.01 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.85 5.8 2.4a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.68 8.24-8.17 8.24Zm4.5-6.16c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.10-.23-.17-.48-.29Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="footer__nav">
+            <div>
+              <p>Аренда опалубки</p>
+              <ul>
+                <li><a href="walls.html">Стеновая</a></li>
+                <li><a href="#">Колонн</a></li>
+                <li><a href="#">Перекрытий</a></li>
+                <li><a href="#">Фундамента</a></li>
+                <li><a href="#">Лифтовых шахт</a></li>
+                <li><a href="#">Мостовая</a></li>
+              </ul>
+            </div>
+            <div>
+              <p>Продажа опалубки</p>
+              <ul>
+                <li><a href="#">Крупнощитовая</a></li>
+                <li><a href="#">Мелкощитовая</a></li>
+                <li><a href="#">Комплектующие</a></li>
+                <li><a href="#">Балка БДК</a></li>
+                <li><a href="#">Ламинированная фанера</a></li>
+                <li><a href="#">Опалубка б/у</a></li>
+              </ul>
+            </div>
+            <div>
+              <p>Леса и техника</p>
+              <ul>
+                <li><a href="#">Строительные леса</a></li>
+                <li><a href="#">Спецтехника</a></li>
+                <li><a href="#">Оборудование</a></li>
+                <li><a href="#">Инж. расчёт</a></li>
+                <li><a href="#">Выкуп и лизинг</a></li>
+              </ul>
+            </div>
+            <div>
+              <p>Компания</p>
+              <ul>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="objects.html">Объекты</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="footer__contacts">
+            <p>Контакты</p>
+            <a class="footer__phone" href="tel:+74951207712"
+              >+7 (495) 120-77-12</a
+            >
+            <a class="footer__callback" href="#">Заказать звонок</a>
+            <p class="footer__hours">Пн–Пт, 9:00–18:00</p>
+            <p class="footer__address">г. Мытищи, Олимпийский пр-т, 56</p>
+            <a class="btn btn--orange footer__btn" href="#">Оставить заявку</a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            © 2026 ООО ТК «Северянин». ОГРН 1237700328424 · ИНН 7710381127 · КПП
+            771001001
+          </p>
+          <a href="#">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

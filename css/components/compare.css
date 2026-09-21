@@ -1,0 +1,119 @@
+.compare {
+  padding: 96px 0 100px;
+  background: #f4f1ea;
+  color: #111111;
+}
+
+.compare__head {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.compare__title {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.compare__subtitle {
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #8a8a8a;
+}
+
+.compare__table-wrap {
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: #fbfaf7;
+  border-radius: 20px;
+}
+
+.compare__table {
+  width: 100%;
+}
+
+.compare__table th,
+.compare__table td {
+  padding: 18px 24px;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.compare__table thead th {
+  background: #111111;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.compare__table thead th:nth-child(2) {
+  width: 220px;
+  color: var(--color-orange);
+}
+
+.compare__table thead th:nth-child(3) {
+  width: 220px;
+  color: var(--color-white);
+}
+
+.compare__table tbody td:first-child {
+  color: #111111;
+}
+
+.compare__table tbody td:nth-child(2) {
+  font-weight: 600;
+  color: var(--color-orange);
+  background: #fff3e8;
+}
+
+.compare__table tbody td:nth-child(3) {
+  color: #6f6f6f;
+}
+
+.compare__table tbody tr:nth-child(even) td:first-child,
+.compare__table tbody tr:nth-child(even) td:nth-child(3) {
+  background: #f3efe6;
+}
+
+.compare__banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 72px;
+  padding: 12px 12px 12px 28px;
+  background: var(--color-orange);
+  border-radius: 16px;
+}
+
+.compare__banner-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.compare__banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-white);
+  background: #111111;
+  border-radius: 12px;
+  white-space: nowrap;
+  transition: background-color var(--transition);
+}
+
+.compare__banner-btn:hover {
+  background: #2a2a2a;
+}

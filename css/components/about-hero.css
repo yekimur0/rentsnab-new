@@ -1,0 +1,163 @@
+.about-hero {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background: #1a120c;
+}
+
+.about-hero__media {
+  position: absolute;
+  inset: 0;
+}
+
+.about-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.about-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 6, 4, 0.88) 0%,
+      rgba(8, 6, 4, 0.55) 42%,
+      rgba(8, 6, 4, 0.18) 72%,
+      rgba(8, 6, 4, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 6, 4, 0.12) 0%,
+      rgba(8, 6, 4, 0.08) 55%,
+      rgba(8, 6, 4, 0.4) 100%
+    );
+}
+
+.about-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 520px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.about-hero__title {
+  max-width: 760px;
+  margin-bottom: 18px;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.about-hero__text {
+  max-width: 620px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.about-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-hero__stats b {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-orange);
+}
+
+.about-hero__stats span {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+}
+
+.about-quote {
+  padding: 48px 0 64px;
+  background: #111111;
+}
+
+.about-quote__inner {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-quote__author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.about-quote__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-orange);
+  border: 2px solid var(--color-orange);
+  border-radius: 50%;
+}
+
+.about-quote__author b {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.about-quote__author span {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+}
+
+.about-quote__text {
+  position: relative;
+  padding-left: 36px;
+}
+
+.about-quote__text::before {
+  content: "“";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-orange);
+}
+
+.about-quote__text p {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.about-quote__text p:last-child {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: var(--color-text-muted);
+}

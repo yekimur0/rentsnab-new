@@ -1,0 +1,55 @@
+.rent-steps {
+  padding: 40px 0 100px;
+  background: #111111;
+}
+
+.rent-steps__title {
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.rent-steps__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.rent-steps__card {
+  min-height: 220px;
+  padding: 24px 20px 22px;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+.rent-steps__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-white);
+  background: var(--color-orange);
+  border-radius: 10px;
+}
+
+.rent-steps__name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-white);
+}
+
+.rent-steps__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}

@@ -1,0 +1,44 @@
+.rent-docs {
+  padding: 48px 0 100px;
+  background: #111111;
+}
+
+.rent-docs__head {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.rent-docs__title {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.rent-docs__subtitle {
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.rent-docs__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.rent-docs__item {
+  overflow: hidden;
+  background: #f4f1ea;
+  border-radius: 16px;
+}
+
+.rent-docs__item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+}

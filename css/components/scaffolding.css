@@ -1,0 +1,140 @@
+.scaffolding {
+  padding: 96px 0 100px;
+  background: #f4f1ea;
+  color: #111111;
+}
+
+.scaffolding__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.scaffolding__title {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.scaffolding__subtitle {
+  max-width: 620px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #8a8a8a;
+}
+
+.scaffolding__all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  background: transparent;
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  border-radius: 12px;
+  white-space: nowrap;
+  transition:
+    border-color var(--transition),
+    background-color var(--transition);
+}
+
+.scaffolding__all:hover {
+  background: rgba(17, 17, 17, 0.04);
+  border-color: rgba(17, 17, 17, 0.3);
+}
+
+.scaffolding__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.scaffolding__card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 20px;
+  background: #fbfaf7;
+  border-radius: 20px;
+}
+
+.scaffolding__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  margin-bottom: 18px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.scaffolding__image img {
+  max-width: 86%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.scaffolding__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-orange);
+}
+
+.scaffolding__tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--color-orange);
+  border-radius: 50%;
+}
+
+.scaffolding__name {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111111;
+}
+
+.scaffolding__text {
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #8a8a8a;
+}
+
+.scaffolding__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.scaffolding__price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.scaffolding__link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-orange);
+  transition: color var(--transition);
+}
+
+.scaffolding__link:hover {
+  color: var(--color-orange-hover);
+}
