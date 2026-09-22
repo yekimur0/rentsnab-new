@@ -116,11 +116,14 @@
           </div>
 
           <a class="btn btn--orange" href="#">Рассчитать за 1 час</a>
+
+          <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
         </div>
       </div>
 
       <nav class="nav">
         <div class="container nav__inner">
+          <button class="nav__catalog"><span class="nav__catalog-icon"><span></span><span></span><span></span></span>Каталог</button>
           <ul class="nav__list">
             <li><a href="rent.html">Аренда опалубки</a></li>
             <li><a href="#">Продажа опалубки</a></li>
@@ -163,8 +166,8 @@
           </nav>
           <h1 class="pay-hero__title">Оплата аренды опалубки</h1>
           <p class="pay-hero__subtitle">
-            Наличными, переводом на карту или по QR-коду — для физлиц и ИП.
-            Для юридических лиц — безналичный расчёт по счёту с полным пакетом
+            Наличными, переводом на карту или по QR-коду — для физлиц и ИП. Для
+            юридических лиц — безналичный расчёт по счёту с полным пакетом
             документов.
           </p>
         </div>
@@ -231,72 +234,67 @@
         <!-- Legal entities -->
         <div class="pay-methods__group">
           <div class="pay-methods__group-header">
-            <span class="pay-methods__group-title"
-              >Для юридических лиц</span
-            >
-            <span class="pay-methods__badge"
-              >безналичный расчёт по счёту</span
-            >
+            <span class="pay-methods__group-title">Для юридических лиц</span>
+            <span class="pay-methods__badge">безналичный расчёт по счёту</span>
           </div>
           <div class="pay-methods__legal">
-            <b class="pay-methods__legal-title"
-              >Безналичная оплата по счёту</b
-            >
-            <p class="pay-methods__legal-text">
-              Выставим счёт на реквизиты вашей организации и предоставим полный
-              пакет закрывающих документов: договор, счёт, акт, УПД.
-            </p>
-            <p class="pay-methods__tax-label">Варианты налогообложения</p>
-            <div class="pay-methods__tax-options">
-              <div class="pay-methods__tax-item">
-                <span class="pay-methods__tax-check">
-                  <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                    <path
-                      d="M2.5 6L5 8.5L9.5 3.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <div class="pay-methods__tax-info">
-                  <b>Без НДС</b>
-                  <span>для упрощёнки</span>
+            <div class="pay-methods__legal-info">
+              <span class="pay-methods__legal-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <rect
+                    x="3.5"
+                    y="3.5"
+                    width="13"
+                    height="13"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M7 8H13M7 11.5H11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <b class="pay-methods__legal-title"
+                >Безналичная оплата по счёту</b
+              >
+              <p class="pay-methods__legal-text">
+                Выставим счёт на реквизиты вашей организации и предоставим
+                полный пакет закрывающих документов: договор, счёт, акт, УПД.
+              </p>
+            </div>
+            <div class="pay-methods__tax">
+              <p class="pay-methods__tax-label">Варианты налогообложения</p>
+              <div class="pay-methods__tax-options">
+                <div class="pay-methods__tax-item">
+                  <div class="pay-methods__tax-info">
+                    <b>Без НДС</b>
+                    <span>для упрощёнки (УСН)</span>
+                  </div>
+                  <span class="pay-methods__tax-check" aria-hidden="true"
+                    >✓</span
+                  >
                 </div>
-              </div>
-              <div class="pay-methods__tax-item">
-                <span class="pay-methods__tax-check">
-                  <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                    <path
-                      d="M2.5 6L5 8.5L9.5 3.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <div class="pay-methods__tax-info">
-                  <b>С НДС 5%</b>
-                  <span>льготная ставка</span>
+                <div class="pay-methods__tax-item">
+                  <div class="pay-methods__tax-info">
+                    <b>С НДС 5%</b>
+                    <span>льготная ставка</span>
+                  </div>
+                  <span class="pay-methods__tax-check" aria-hidden="true"
+                    >✓</span
+                  >
                 </div>
-              </div>
-              <div class="pay-methods__tax-item">
-                <span class="pay-methods__tax-check">
-                  <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                    <path
-                      d="M2.5 6L5 8.5L9.5 3.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <div class="pay-methods__tax-info">
-                  <b>С НДС 22%</b>
-                  <span>общая ставка</span>
+                <div class="pay-methods__tax-item">
+                  <div class="pay-methods__tax-info">
+                    <b>С НДС 22%</b>
+                    <span>общая ставка</span>
+                  </div>
+                  <span class="pay-methods__tax-check" aria-hidden="true"
+                    >✓</span
+                  >
                 </div>
               </div>
             </div>
@@ -565,6 +563,39 @@
       </div>
     </footer>
 
+        <!-- Request Popup -->
+    <div class="req-overlay" id="reqPopup">
+      <div class="req-popup">
+        <div class="req-popup__header">
+          <div>
+            <div class="req-popup__title">Бесплатный расчёт</div>
+            <div class="req-popup__subtitle">Инженер подберёт опалубку и раскладку под ваш проект за 24 часа</div>
+          </div>
+          <button class="req-popup__close" type="button">&#10005;</button>
+        </div>
+        <div class="req-popup__field">
+          <label class="req-popup__label">Ваше имя</label>
+          <input class="req-popup__input" type="text" placeholder="Иван Иванов" />
+        </div>
+        <div class="req-popup__field">
+          <label class="req-popup__label">Телефон</label>
+          <input class="req-popup__input" type="tel" placeholder="+7 (___) ___-__-__" />
+        </div>
+        <div class="req-popup__field">
+          <label class="req-popup__label">Комментарий</label>
+          <input class="req-popup__input" type="text" placeholder="Опишите ваш проект или вопрос" />
+        </div>
+        <div class="req-popup__check">
+          <input class="req-popup__checkbox" type="checkbox" checked />
+          <span class="req-popup__check-text">Согласен с <a href="#">офертой</a> и <a href="#">политикой обработки персональных данных</a></span>
+        </div>
+        <button class="req-popup__submit" type="button">Отправить заявку</button>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/megamenu.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

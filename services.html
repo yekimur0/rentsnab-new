@@ -116,11 +116,14 @@
           </div>
 
           <a class="btn btn--orange" href="#">Рассчитать за 1 час</a>
+
+          <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
         </div>
       </div>
 
       <nav class="nav">
         <div class="container nav__inner">
+          <button class="nav__catalog"><span class="nav__catalog-icon"><span></span><span></span><span></span></span>Каталог</button>
           <ul class="nav__list">
             <li><a href="rent.html">Аренда опалубки</a></li>
             <li><a href="#">Продажа опалубки</a></li>
@@ -668,6 +671,39 @@
       </div>
     </footer>
 
+        <!-- Request Popup -->
+    <div class="req-overlay" id="reqPopup">
+      <div class="req-popup">
+        <div class="req-popup__header">
+          <div>
+            <div class="req-popup__title">Бесплатный расчёт</div>
+            <div class="req-popup__subtitle">Инженер подберёт опалубку и раскладку под ваш проект за 24 часа</div>
+          </div>
+          <button class="req-popup__close" type="button">&#10005;</button>
+        </div>
+        <div class="req-popup__field">
+          <label class="req-popup__label">Ваше имя</label>
+          <input class="req-popup__input" type="text" placeholder="Иван Иванов" />
+        </div>
+        <div class="req-popup__field">
+          <label class="req-popup__label">Телефон</label>
+          <input class="req-popup__input" type="tel" placeholder="+7 (___) ___-__-__" />
+        </div>
+        <div class="req-popup__field">
+          <label class="req-popup__label">Комментарий</label>
+          <input class="req-popup__input" type="text" placeholder="Опишите ваш проект или вопрос" />
+        </div>
+        <div class="req-popup__check">
+          <input class="req-popup__checkbox" type="checkbox" checked />
+          <span class="req-popup__check-text">Согласен с <a href="#">офертой</a> и <a href="#">политикой обработки персональных данных</a></span>
+        </div>
+        <button class="req-popup__submit" type="button">Отправить заявку</button>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/megamenu.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

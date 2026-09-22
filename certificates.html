@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Объекты — Северянин</title>
+    <title>Сертификаты и документы — Северянин</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,10 +22,10 @@
           <div class="topbar__right">
             <nav class="topbar__nav">
               <a href="about.html">О компании</a>
-              <a href="#">Как мы работаем</a>
-              <a href="#">Доставка</a>
+              <a href="howwork.html">Как мы работаем</a>
+              <a href="delivery.html">Доставка</a>
               <a href="objects.html">Объекты</a>
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </nav>
             <span class="topbar__hours">
               <svg
@@ -130,8 +130,8 @@
             <li><a href="#">Строительные леса</a></li>
             <li><a href="#">Спецтехника</a></li>
             <li><a href="#">Оборудование</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Оплата</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="payment.html">Оплата</a></li>
           </ul>
           <a class="nav__offer" href="#">
             Коммерческое предложение
@@ -155,347 +155,216 @@
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="obj-hero">
-      <div class="obj-hero__media"></div>
-      <div class="container obj-hero__inner">
+    <section class="cert-hero">
+      <div class="cert-hero__media">
+        <img
+          class="cert-hero__image"
+          src="image/about-hero.jpg"
+          alt="Склад опалубки ГК Северянин"
+        />
+      </div>
+      <div class="container cert-hero__inner">
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
           <a href="index.html">Главная</a>
           <span>/</span>
-          <span>Объекты</span>
+          <span>Сертификаты</span>
         </nav>
-        <h1 class="obj-hero__title">Объекты на нашей опалубке</h1>
-        <p class="obj-hero__text">
-          Жилые комплексы, промышленные и инфраструктурные объекты Москвы и
-          области, обеспеченные оборотной опалубкой, лесами и оснасткой.
+        <h1 class="cert-hero__title">Сертификаты и документы</h1>
+        <p class="cert-hero__text">
+          Оборудование сертифицировано, соответствует ГОСТ и проходит проверку
+          перед каждой выдачей. Работаем по договору с полным пакетом
+          закрывающих документов.
         </p>
-        <ul class="obj-hero__stats">
-          <li>
-            <b>800+</b>
-            <span>объектов обеспечено</span>
-          </li>
-          <li>
-            <b>24</b>
-            <span>региона доставки</span>
-          </li>
-          <li>
-            <b>200 000 м²</b>
-            <span>обслуженный парк</span>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <!-- Cases -->
-    <section class="s-cases">
-      <div class="container">
-        <div class="s-cases__header">
-          <h2 class="s-cases__title">Реализованные объекты</h2>
-          <p class="s-cases__subtitle">
-            Подборка объектов по типам конструкций. Фото и данные приведены для
-            примера.
+    <section class="cert-proof">
+      <div class="container cert-proof__inner">
+        <div class="cert-proof__intro">
+          <p class="cert-proof__label">Гарантии на аренде</p>
+          <h2 class="cert-proof__title">Что подтверждают документы</h2>
+          <p class="cert-proof__text">
+            Сертификаты и паспорта соответствия — это гарантия, что вы получаете
+            исправную и безопасную оснастку.
           </p>
         </div>
 
-        <div class="obj-filters">
-          <button
-            class="obj-filters__btn obj-filters__btn--active"
-            type="button"
-            data-filter="all"
-          >
-            Все объекты
-          </button>
-          <button class="obj-filters__btn" type="button" data-filter="living">
-            Жилые
-          </button>
-          <button
-            class="obj-filters__btn"
-            type="button"
-            data-filter="industrial"
-          >
-            Промышленные
-          </button>
-          <button class="obj-filters__btn" type="button" data-filter="infra">
-            Инфраструктура
-          </button>
-          <button
-            class="obj-filters__btn"
-            type="button"
-            data-filter="commercial"
-          >
-            Коммерческие
-          </button>
-        </div>
-
-        <div class="obj-grid">
-          <article class="obj-card" data-category="living">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Жилые</span>
-              <img src="image/object-jk.jpg" alt="ЖК бизнес-класса" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">ЖК бизнес-класса</h3>
-              <p class="obj-card__location">Москва</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Стеновая + перекрытий</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>12 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="industrial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Промышленные</span>
-              <img
-                src="image/object-logistic.jpg"
-                alt="Логистический комплекс"
-              />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Логистический комплекс</h3>
-              <p class="obj-card__location">Московская область</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Колонн + перекрытий</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>8 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="infra">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Инфраструктура</span>
-              <img src="image/object-infra.jpg" alt="Мостовой переход" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Мостовой переход</h3>
-              <p class="obj-card__location">Регион РФ</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Мостовая + фундамента</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>спецпроект</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="commercial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Коммерческие</span>
-              <img src="image/object-mall.jpg" alt="Торговый центр" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Торговый центр</h3>
-              <p class="obj-card__location">Москва</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Перекрытий + колонн</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>6 500 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="industrial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Промышленные</span>
-              <img src="image/object-plant.jpg" alt="Производственный цех" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Производственный цех</h3>
-              <p class="obj-card__location">Московская область</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Стеновая + фундамента</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>5 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="commercial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Коммерческие</span>
-              <img
-                src="image/object-parking.jpg"
-                alt="Многоуровневый паркинг"
-              />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Многоуровневый паркинг</h3>
-              <p class="obj-card__location">Москва</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Перекрытий на стойках</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>9 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="obj-pagination">
-          <button
-            class="obj-pagination__item obj-pagination__item--active"
-            type="button"
-          >
-            1
-          </button>
-          <button class="obj-pagination__item" type="button">2</button>
-          <button class="obj-pagination__item" type="button">3</button>
-          <button class="obj-pagination__item" type="button">&rarr;</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="rent-reviews">
-      <div class="container">
-        <div class="rent-reviews__head">
-          <div>
-            <h2 class="rent-reviews__title">Отзывы клиентов</h2>
-            <div class="rent-reviews__rating">
-              <span class="rent-reviews__ya">Я</span>
-              <div>
-                <p class="rent-reviews__score">
-                  Яндекс
-                  <b>4.9</b>
-                  <span class="rent-reviews__stars" aria-hidden="true"
-                    >★★★★★</span
-                  >
-                </p>
-                <p class="rent-reviews__count">38 отзывов на Яндекс Картах</p>
-              </div>
-            </div>
-          </div>
-          <a class="rent-reviews__all" href="#">Смотреть все на Яндексе →</a>
-        </div>
-
-        <div class="rent-reviews__grid">
-          <article class="rent-reviews__card">
-            <div class="rent-reviews__top">
-              <div class="rent-reviews__user">
-                <span class="rent-reviews__avatar">АК</span>
-                <div>
-                  <b>Артём К.</b>
-                  <span>2 недели назад</span>
-                </div>
-              </div>
-              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
-            </div>
-            <p class="rent-reviews__stars">★★★★★</p>
-            <p class="rent-reviews__text">
-              Привезли опалубку в день заявки, инженер помог с раскладкой на
-              сложном узле. Монолит сдали без простоев.
-            </p>
-          </article>
-
-          <article class="rent-reviews__card">
-            <div class="rent-reviews__top">
-              <div class="rent-reviews__user">
-                <span class="rent-reviews__avatar">СМ</span>
-                <div>
-                  <b>Сергей М.</b>
-                  <span>месяц назад</span>
-                </div>
-              </div>
-              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
-            </div>
-            <p class="rent-reviews__stars">★★★★★</p>
-            <p class="rent-reviews__text">
-              Работаем как юрлицо без залога и с отсрочкой. Парк большой,
-              докомплект возят быстро под график стройки.
-            </p>
-          </article>
-
-          <article class="rent-reviews__card">
-            <div class="rent-reviews__top">
-              <div class="rent-reviews__user">
-                <span class="rent-reviews__avatar">ДВ</span>
-                <div>
-                  <b>Дмитрий В.</b>
-                  <span>2 месяца назад</span>
-                </div>
-              </div>
-              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
-            </div>
-            <p class="rent-reviews__stars">★★★★★</p>
-            <p class="rent-reviews__text">
-              Взяли в аренду вместо покупки и сэкономили на хранении и ремонте.
-              Всё прозрачно по договору.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="obj-cta">
-      <div class="container">
-        <div class="obj-cta__box">
-          <div class="obj-cta__content">
-            <h2 class="obj-cta__title">Ваш объект — следующий в портфолио</h2>
-            <p class="obj-cta__text">
-              Пришлите проект или опишите объект — рассчитаем опалубку, комплект
-              и поставку под ваш график.
-            </p>
-          </div>
-          <div class="obj-cta__actions">
-            <a class="obj-cta__btn" href="#">
-              Обсудить объект
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                aria-hidden="true"
-              >
+        <div class="cert-proof__list">
+          <article class="cert-proof__item">
+            <span class="cert-proof__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
                 <path
-                  d="M3 8H13M13 8L9 4M13 8L9 12"
+                  d="M10 2.5 16.5 5V9.5C16.5 13.4 13.7 16.6 10 17.5C6.3 16.6 3.5 13.4 3.5 9.5V5L10 2.5Z"
                   stroke="currentColor"
                   stroke-width="1.5"
-                  stroke-linecap="round"
                   stroke-linejoin="round"
                 />
               </svg>
-            </a>
-            <span class="obj-cta__phone">
-              или звоните
-              <a href="tel:+74951207712">+7 (495) 120-77-12</a>
             </span>
+            <div>
+              <h3>Соответствие ГОСТ</h3>
+              <p>Опалубка отвечает ГОСТ 34329-2017 на прочность и ресурс.</p>
+            </div>
+          </article>
+
+          <article class="cert-proof__item">
+            <span class="cert-proof__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M10 6.5V10.2L12.5 12"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>Ресурс оборачиваемости</h3>
+              <p>Паспорт подтверждает 250–400 циклов эксплуатации.</p>
+            </div>
+          </article>
+
+          <article class="cert-proof__item">
+            <span class="cert-proof__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <rect
+                  x="3.5"
+                  y="3.5"
+                  width="13"
+                  height="13"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M7 8H13M7 11.5H11"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>Паспорта на партии</h3>
+              <p>Каждая партия сопровождается паспортом и маркировкой.</p>
+            </div>
+          </article>
+
+          <article class="cert-proof__item">
+            <span class="cert-proof__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <rect
+                  x="3.5"
+                  y="4.5"
+                  width="13"
+                  height="11"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M7 8.5H13M7 11.5H11"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>Проверка перед выдачей</h3>
+              <p>Ревизия комплекта на целостность и готовность к работе.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cert-docs">
+      <div class="container">
+        <div class="cert-docs__head">
+          <div>
+            <p class="cert-docs__label">Документы</p>
+            <h2 class="cert-docs__title">Сертификаты компании</h2>
+            <p class="cert-docs__text">
+              Нажмите на документ, чтобы открыть его в полном размере или
+              скачать PDF.
+            </p>
           </div>
+          <a class="cert-docs__all" href="#">Скачать все →</a>
+        </div>
+
+        <div class="cert-docs__grid">
+          <a class="cert-docs__card" href="image/cert-1.jpg">
+            <div class="cert-docs__preview">
+              <img src="image/cert-1.jpg" alt="Сертификат соответствия" />
+            </div>
+            <div class="cert-docs__meta">
+              <div>
+                <h3>Сертификат соответствия</h3>
+                <p>Опалубка стеновая, ГОСТ</p>
+              </div>
+              <span class="cert-docs__download" aria-hidden="true">↓</span>
+            </div>
+          </a>
+
+          <a class="cert-docs__card" href="image/cert-2.png">
+            <div class="cert-docs__preview">
+              <img src="image/cert-2.png" alt="Сертификат соответствия" />
+            </div>
+            <div class="cert-docs__meta">
+              <div>
+                <h3>Сертификат соответствия</h3>
+                <p>Стойки, балки, комплекты</p>
+              </div>
+              <span class="cert-docs__download" aria-hidden="true">↓</span>
+            </div>
+          </a>
+
+          <a class="cert-docs__card" href="image/cert-3.jpg">
+            <div class="cert-docs__preview">
+              <img src="image/cert-3.jpg" alt="Паспорт оборудования" />
+            </div>
+            <div class="cert-docs__meta">
+              <div>
+                <h3>Паспорт оборудования</h3>
+                <p>Опалубка перекрытий, щиты</p>
+              </div>
+              <span class="cert-docs__download" aria-hidden="true">↓</span>
+            </div>
+          </a>
+
+          <a class="cert-docs__card" href="image/cert-4.jpg">
+            <div class="cert-docs__preview">
+              <img src="image/cert-4.jpg" alt="Сертификат ГОСТ" />
+            </div>
+            <div class="cert-docs__meta">
+              <div>
+                <h3>Сертификат ГОСТ</h3>
+                <p>Оборудование и оснастка</p>
+              </div>
+              <span class="cert-docs__download" aria-hidden="true">↓</span>
+            </div>
+          </a>
+
+          <a class="cert-docs__card" href="image/cert-5.jpg">
+            <div class="cert-docs__preview">
+              <img src="image/cert-5.jpg" alt="Декларация соответствия" />
+            </div>
+            <div class="cert-docs__meta">
+              <div>
+                <h3>Декларация соответствия</h3>
+                <p>Комплекты опалубки и крепёж</p>
+              </div>
+              <span class="cert-docs__download" aria-hidden="true">↓</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -564,7 +433,7 @@
                 <li><a href="#">Мелкощитовая</a></li>
                 <li><a href="#">Комплектующие</a></li>
                 <li><a href="#">Балка БДК</a></li>
-                <li><a href="#">Ламинированная фанера</a></li>
+                <li><a href="#">Ламин. фанера</a></li>
                 <li><a href="#">Опалубка б/у</a></li>
               </ul>
             </div>
@@ -583,9 +452,9 @@
               <ul>
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="objects.html">Объекты</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="payment.html">Оплата</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
               </ul>
             </div>
           </nav>
@@ -604,8 +473,8 @@
 
         <div class="footer__bottom">
           <p>
-            © 2026 ООО ТК «Северянин». ОГРН 1237700328424 · ИНН 7710381127 · КПП
-            771001001
+            © 2026 ООО ГК «Северянин» · ОГРН 1237700284524 · ИНН 7716981237 ·
+            КПП 771601001
           </p>
           <a href="#">Политика обработки персональных данных</a>
         </div>

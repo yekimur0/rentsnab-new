@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Объекты — Северянин</title>
+    <title>Акции и спецпредложения — Северянин</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,10 +22,10 @@
           <div class="topbar__right">
             <nav class="topbar__nav">
               <a href="about.html">О компании</a>
-              <a href="#">Как мы работаем</a>
-              <a href="#">Доставка</a>
+              <a href="howwork.html">Как мы работаем</a>
+              <a href="delivery.html">Доставка</a>
               <a href="objects.html">Объекты</a>
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </nav>
             <span class="topbar__hours">
               <svg
@@ -130,8 +130,8 @@
             <li><a href="#">Строительные леса</a></li>
             <li><a href="#">Спецтехника</a></li>
             <li><a href="#">Оборудование</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Оплата</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="payment.html">Оплата</a></li>
           </ul>
           <a class="nav__offer" href="#">
             Коммерческое предложение
@@ -155,346 +155,287 @@
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="obj-hero">
-      <div class="obj-hero__media"></div>
-      <div class="container obj-hero__inner">
+    <section class="promo-hero">
+      <div class="promo-hero__media">
+        <img
+          class="promo-hero__image"
+          src="image/hw-work-hero.jpg"
+          alt="Акции на аренду опалубки"
+        />
+      </div>
+      <div class="container promo-hero__inner">
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
           <a href="index.html">Главная</a>
           <span>/</span>
-          <span>Объекты</span>
+          <span>Акции</span>
         </nav>
-        <h1 class="obj-hero__title">Объекты на нашей опалубке</h1>
-        <p class="obj-hero__text">
-          Жилые комплексы, промышленные и инфраструктурные объекты Москвы и
-          области, обеспеченные оборотной опалубкой, лесами и оснасткой.
+        <span class="promo-hero__badge">Действует сейчас</span>
+        <h1 class="promo-hero__title">
+          Акции и спецпредложения на аренду<br />
+          опалубки
+        </h1>
+        <p class="promo-hero__text">
+          Скидки на аренду, бесплатная доставка и особые условия для юрлиц — на
+          комплекты стеновой опалубки, колонн и перекрытий.
         </p>
-        <ul class="obj-hero__stats">
+        <ul class="promo-hero__stats">
           <li>
-            <b>800+</b>
-            <span>объектов обеспечено</span>
+            <b>до −20%</b>
+            <span>на длительный срок</span>
           </li>
           <li>
-            <b>24</b>
-            <span>региона доставки</span>
+            <b>0 ₽</b>
+            <span>доставка по Москве</span>
           </li>
           <li>
-            <b>200 000 м²</b>
-            <span>обслуженный парк</span>
+            <b>6</b>
+            <span>актуальных предложений</span>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Cases -->
-    <section class="s-cases">
+    <section class="promo-featured">
       <div class="container">
-        <div class="s-cases__header">
-          <h2 class="s-cases__title">Реализованные объекты</h2>
-          <p class="s-cases__subtitle">
-            Подборка объектов по типам конструкций. Фото и данные приведены для
-            примера.
-          </p>
-        </div>
-
-        <div class="obj-filters">
-          <button
-            class="obj-filters__btn obj-filters__btn--active"
-            type="button"
-            data-filter="all"
-          >
-            Все объекты
-          </button>
-          <button class="obj-filters__btn" type="button" data-filter="living">
-            Жилые
-          </button>
-          <button
-            class="obj-filters__btn"
-            type="button"
-            data-filter="industrial"
-          >
-            Промышленные
-          </button>
-          <button class="obj-filters__btn" type="button" data-filter="infra">
-            Инфраструктура
-          </button>
-          <button
-            class="obj-filters__btn"
-            type="button"
-            data-filter="commercial"
-          >
-            Коммерческие
-          </button>
-        </div>
-
-        <div class="obj-grid">
-          <article class="obj-card" data-category="living">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Жилые</span>
-              <img src="image/object-jk.jpg" alt="ЖК бизнес-класса" />
+        <article class="promo-featured__box">
+          <div class="promo-featured__content">
+            <span class="promo-featured__label"
+              >Главная акция · до 31 декабря</span
+            >
+            <h2 class="promo-featured__title">
+              −20% на аренду опалубки от 3 месяцев
+            </h2>
+            <p class="promo-featured__text">
+              Берёте комплект на длительный срок — снижаем ставку аренды на 20%
+              на весь период. Чем дольше срок, тем выгоднее ставка.
+            </p>
+            <div class="promo-featured__actions">
+              <a class="btn btn--orange" href="#">Получить скидку</a>
+              <p class="promo-featured__phone">
+                или звоните
+                <a href="tel:88000000000">8 800 000-00-00</a>
+              </p>
             </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">ЖК бизнес-класса</h3>
-              <p class="obj-card__location">Москва</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Стеновая + перекрытий</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>12 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="industrial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Промышленные</span>
-              <img
-                src="image/object-logistic.jpg"
-                alt="Логистический комплекс"
-              />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Логистический комплекс</h3>
-              <p class="obj-card__location">Московская область</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Колонн + перекрытий</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>8 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="infra">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Инфраструктура</span>
-              <img src="image/object-infra.jpg" alt="Мостовой переход" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Мостовой переход</h3>
-              <p class="obj-card__location">Регион РФ</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Мостовая + фундамента</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>спецпроект</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="commercial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Коммерческие</span>
-              <img src="image/object-mall.jpg" alt="Торговый центр" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Торговый центр</h3>
-              <p class="obj-card__location">Москва</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Перекрытий + колонн</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>6 500 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="industrial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Промышленные</span>
-              <img src="image/object-plant.jpg" alt="Производственный цех" />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Производственный цех</h3>
-              <p class="obj-card__location">Московская область</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Стеновая + фундамента</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>5 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-
-          <article class="obj-card" data-category="commercial">
-            <div class="obj-card__image">
-              <span class="obj-card__badge">Коммерческие</span>
-              <img
-                src="image/object-parking.jpg"
-                alt="Многоуровневый паркинг"
-              />
-            </div>
-            <div class="obj-card__body">
-              <h3 class="obj-card__title">Многоуровневый паркинг</h3>
-              <p class="obj-card__location">Москва</p>
-              <dl class="obj-card__data">
-                <div class="obj-card__row">
-                  <dt>Опалубка</dt>
-                  <dd>Перекрытий на стойках</dd>
-                </div>
-                <div class="obj-card__row">
-                  <dt>Объём</dt>
-                  <dd>9 000 м²</dd>
-                </div>
-              </dl>
-              <a class="obj-card__link" href="#">Подробнее об объекте →</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="obj-pagination">
-          <button
-            class="obj-pagination__item obj-pagination__item--active"
-            type="button"
-          >
-            1
-          </button>
-          <button class="obj-pagination__item" type="button">2</button>
-          <button class="obj-pagination__item" type="button">3</button>
-          <button class="obj-pagination__item" type="button">&rarr;</button>
-        </div>
+          </div>
+          <div class="promo-featured__media">
+            <img
+              src="image/promo-formwork.jpg"
+              alt="Комплект стеновой опалубки"
+            />
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="rent-reviews">
+    <section class="promo-list">
       <div class="container">
-        <div class="rent-reviews__head">
-          <div>
-            <h2 class="rent-reviews__title">Отзывы клиентов</h2>
-            <div class="rent-reviews__rating">
-              <span class="rent-reviews__ya">Я</span>
-              <div>
-                <p class="rent-reviews__score">
-                  Яндекс
-                  <b>4.9</b>
-                  <span class="rent-reviews__stars" aria-hidden="true"
-                    >★★★★★</span
-                  >
-                </p>
-                <p class="rent-reviews__count">38 отзывов на Яндекс Картах</p>
-              </div>
-            </div>
-          </div>
-          <a class="rent-reviews__all" href="#">Смотреть все на Яндексе →</a>
-        </div>
-
-        <div class="rent-reviews__grid">
-          <article class="rent-reviews__card">
-            <div class="rent-reviews__top">
-              <div class="rent-reviews__user">
-                <span class="rent-reviews__avatar">АК</span>
-                <div>
-                  <b>Артём К.</b>
-                  <span>2 недели назад</span>
-                </div>
-              </div>
-              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
-            </div>
-            <p class="rent-reviews__stars">★★★★★</p>
-            <p class="rent-reviews__text">
-              Привезли опалубку в день заявки, инженер помог с раскладкой на
-              сложном узле. Монолит сдали без простоев.
+        <h2 class="promo-list__title">Все акции и предложения</h2>
+        <div class="promo-list__grid">
+          <article class="promo-card">
+            <span class="promo-card__badge">Доставка 0 ₽</span>
+            <h3 class="promo-card__title">Бесплатная доставка</h3>
+            <p class="promo-card__text">
+              Привезём комплект бесплатно при заказе аренды от 100 000 ₽ по
+              Москве и МО.
             </p>
           </article>
 
-          <article class="rent-reviews__card">
-            <div class="rent-reviews__top">
-              <div class="rent-reviews__user">
-                <span class="rent-reviews__avatar">СМ</span>
-                <div>
-                  <b>Сергей М.</b>
-                  <span>месяц назад</span>
-                </div>
-              </div>
-              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
-            </div>
-            <p class="rent-reviews__stars">★★★★★</p>
-            <p class="rent-reviews__text">
-              Работаем как юрлицо без залога и с отсрочкой. Парк большой,
-              докомплект возят быстро под график стройки.
+          <article class="promo-card">
+            <span class="promo-card__badge">−15%</span>
+            <h3 class="promo-card__title">Новым клиентам</h3>
+            <p class="promo-card__text">
+              Скидка 15% на первый заказ аренды для новых клиентов — физлиц и
+              юрлиц.
             </p>
           </article>
 
-          <article class="rent-reviews__card">
-            <div class="rent-reviews__top">
-              <div class="rent-reviews__user">
-                <span class="rent-reviews__avatar">ДВ</span>
-                <div>
-                  <b>Дмитрий В.</b>
-                  <span>2 месяца назад</span>
-                </div>
-              </div>
-              <span class="rent-reviews__ya rent-reviews__ya--sm">Я</span>
-            </div>
-            <p class="rent-reviews__stars">★★★★★</p>
-            <p class="rent-reviews__text">
-              Взяли в аренду вместо покупки и сэкономили на хранении и ремонте.
-              Всё прозрачно по договору.
+          <article class="promo-card">
+            <span class="promo-card__badge">Кэшбэк</span>
+            <h3 class="promo-card__title">Возврат раньше срока</h3>
+            <p class="promo-card__text">
+              Вернули оборудование досрочно — часть арендной платы вернём на
+              счёт.
+            </p>
+          </article>
+
+          <article class="promo-card">
+            <span class="promo-card__badge">0 ₽</span>
+            <h3 class="promo-card__title">Инженерный расчёт</h3>
+            <p class="promo-card__text">
+              Раскладка щитов и спецификация комплекта под ваш объект —
+              бесплатно.
+            </p>
+          </article>
+
+          <article class="promo-card">
+            <span class="promo-card__badge">Сезон</span>
+            <h3 class="promo-card__title">Стеновая опалубка</h3>
+            <p class="promo-card__text">
+              Специальная цена на аренду стеновых щитов в низкий сезон.
+            </p>
+            <a class="promo-card__link" href="#">Получить →</a>
+          </article>
+
+          <article class="promo-card">
+            <span class="promo-card__badge">Отсрочка</span>
+            <h3 class="promo-card__title">Для юрлиц</h3>
+            <p class="promo-card__text">
+              Аренда без залога и с отсрочкой платежа по договору для
+              юридических лиц.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="obj-cta">
+    <section class="promo-benefit">
       <div class="container">
-        <div class="obj-cta__box">
-          <div class="obj-cta__content">
-            <h2 class="obj-cta__title">Ваш объект — следующий в портфолио</h2>
-            <p class="obj-cta__text">
-              Пришлите проект или опишите объект — рассчитаем опалубку, комплект
-              и поставку под ваш график.
-            </p>
-          </div>
-          <div class="obj-cta__actions">
-            <a class="obj-cta__btn" href="#">
-              Обсудить объект
+        <h2 class="promo-benifit__title">Выгодно всегда — без акций</h2>
+        <div class="promo-benifit__desc">
+          Условия, которые действуют для всех клиентов постоянно, помимо
+          сезонных акций.
+        </div>
+
+        <div class="promo-benifit__grid">
+          <div class="promo-benifit__card">
+            <div class="promo-benifit__card-icon">
               <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
                 fill="none"
-                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
               >
+                <rect width="54" height="54" rx="13" fill="#FFF1E6" />
                 <path
-                  d="M3 8H13M13 8L9 4M13 8L9 12"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  d="M22.212 44V21.32H29.268C30.668 21.32 31.8067 21.5813 32.684 22.104C33.5613 22.6267 34.2053 23.4293 34.616 24.512C35.0267 25.576 35.232 26.9387 35.232 28.6C35.232 30.2053 34.9987 31.54 34.532 32.604C34.0653 33.6493 33.3467 34.424 32.376 34.928C31.4053 35.432 30.164 35.684 28.652 35.684H26.636V44H22.212ZM20.784 40.416V38.288H32.376V40.416H20.784ZM26.636 32.324H28.344C28.9413 32.324 29.4173 32.2027 29.772 31.96C30.1453 31.7173 30.416 31.3253 30.584 30.784C30.752 30.2427 30.836 29.5333 30.836 28.656C30.836 27.6853 30.752 26.9107 30.584 26.332C30.4347 25.7533 30.1733 25.3333 29.8 25.072C29.4453 24.8107 28.9507 24.68 28.316 24.68H26.636V32.324Z"
+                  fill="#F5871F"
                 />
               </svg>
-            </a>
-            <span class="obj-cta__phone">
-              или звоните
-              <a href="tel:+74951207712">+7 (495) 120-77-12</a>
-            </span>
+            </div>
+            <div class="promo-benifit__card-title">Цена от производителя</div>
+            <div class="promo-benifit__card-desc">
+              Свой парк без посредников — аренда дешевле, чем у перекупщиков.
+            </div>
+          </div>
+          <div class="promo-benifit__card">
+            <div class="promo-benifit__card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+              >
+                <rect width="54" height="54" rx="13" fill="#FFF1E6" />
+                <circle cx="27" cy="27" r="11" fill="#F5871F" />
+                <circle cx="27" cy="27" r="7" fill="#FFF1E6" />
+                <rect
+                  x="26.5"
+                  y="21"
+                  width="2.2"
+                  height="7"
+                  rx="1"
+                  fill="#F5871F"
+                />
+                <rect
+                  x="26.5"
+                  y="26"
+                  width="6"
+                  height="2.2"
+                  rx="1"
+                  fill="#F5871F"
+                />
+              </svg>
+            </div>
+            <div class="promo-benifit__card-title">Оплата за срок</div>
+            <div class="promo-benifit__card-desc">
+              Платите только за фактический срок аренды, вернули раньше —
+              платите меньше.
+            </div>
+          </div>
+          <div class="promo-benifit__card">
+            <div class="promo-benifit__card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+              >
+                <rect width="54" height="54" rx="13" fill="#FFF1E6" />
+                <rect
+                  x="18"
+                  y="15"
+                  width="18"
+                  height="24"
+                  rx="2"
+                  fill="#F5871F"
+                />
+                <rect
+                  x="22"
+                  y="20"
+                  width="10"
+                  height="2"
+                  rx="1"
+                  fill="#FFF1E6"
+                />
+                <rect
+                  x="22"
+                  y="25"
+                  width="10"
+                  height="2"
+                  rx="1"
+                  fill="#FFF1E6"
+                />
+                <rect
+                  x="22"
+                  y="30"
+                  width="7"
+                  height="2"
+                  rx="1"
+                  fill="#FFF1E6"
+                />
+              </svg>
+            </div>
+            <div class="promo-benifit__card-title">Документы для юрлиц</div>
+            <div class="promo-benifit__card-desc">
+              Договор, счёт, акты и закрывающие документы, отсрочка и работа без
+              залога.
+            </div>
+          </div>
+          <div class="promo-benifit__card">
+            <div class="promo-benifit__card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+              >
+                <rect width="54" height="54" rx="13" fill="#FFF1E6" />
+                <rect
+                  x="18"
+                  y="18"
+                  width="18"
+                  height="18"
+                  rx="3"
+                  fill="#F5871F"
+                />
+                <rect
+                  x="23"
+                  y="23"
+                  width="8"
+                  height="8"
+                  rx="2"
+                  fill="#FFF1E6"
+                />
+              </svg>
+            </div>
+            <div class="promo-benifit__card-title">Инженерный расчёт</div>
+            <div class="promo-benifit__card-desc">
+              Раскладка и спецификация комплекта под объект — всегда бесплатно.
+            </div>
           </div>
         </div>
       </div>
@@ -564,7 +505,7 @@
                 <li><a href="#">Мелкощитовая</a></li>
                 <li><a href="#">Комплектующие</a></li>
                 <li><a href="#">Балка БДК</a></li>
-                <li><a href="#">Ламинированная фанера</a></li>
+                <li><a href="#">Ламин. фанера</a></li>
                 <li><a href="#">Опалубка б/у</a></li>
               </ul>
             </div>
@@ -583,9 +524,9 @@
               <ul>
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="objects.html">Объекты</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="payment.html">Оплата</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
               </ul>
             </div>
           </nav>
@@ -604,8 +545,8 @@
 
         <div class="footer__bottom">
           <p>
-            © 2026 ООО ТК «Северянин». ОГРН 1237700328424 · ИНН 7710381127 · КПП
-            771001001
+            © 2026 ООО ГК «Северянин» · ОГРН 1237700284524 · ИНН 7716981237 ·
+            КПП 771601001
           </p>
           <a href="#">Политика обработки персональных данных</a>
         </div>
