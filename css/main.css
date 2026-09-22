@@ -45,6 +45,18 @@
 @import url("components/payment.css");
 @import url("components/howwork.css");
 @import url("components/team.css");
+@import url("components/history.css");
+@import url("components/vacancies.css");
+@import url("components/reviews-page.css");
+@import url("components/certificates.css");
+@import url("components/promo.css");
+@import url("components/object-detail.css");
+@import url("components/article.css");
+@import url("components/product.css");
+@import url("components/blog.css");
+@import url("components/megamenu.css");
+@import url("components/popup.css");
+@import url("responsive.css");
 
 body {
   font-family: var(--font-family);

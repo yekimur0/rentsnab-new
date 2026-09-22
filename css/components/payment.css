@@ -12,7 +12,18 @@
 .pay-hero .container {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 28px;
+}
+
+.pay-hero__actions .btn--outline {
+  color: var(--color-white);
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pay-hero__actions .btn--outline:hover {
+  background: #222222;
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .pay-hero__top {
@@ -105,41 +116,46 @@
 }
 
 .pay-methods__cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .pay-methods__card {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0 28px;
-  border-left: 1px solid #e5dfd5;
-}
-
-.pay-methods__card:first-child {
-  padding-left: 0;
-  border-left: none;
+  min-height: 168px;
+  padding: 22px 22px 20px;
+  background: #fbfaf7;
+  border-radius: 20px;
 }
 
 .pay-methods__card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .pay-methods__card-icon {
-  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1;
   color: #f5871f;
+  background: #fff1e6;
+  border-radius: 10px;
 }
 
 .pay-methods__card-num {
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
   line-height: 1;
-  color: #e6dacb;
+  color: #f5871f;
 }
 
 .pay-methods__card-title {
@@ -158,64 +174,80 @@
 
 /* --- legal entity sub-section --- */
 .pay-methods__legal {
-  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 28px 28px 24px;
+  background: #fbfaf7;
+  border-radius: 20px;
+}
+
+.pay-methods__legal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-methods__legal-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  color: #f5871f;
+  background: #fff1e6;
+  border-radius: 12px;
 }
 
 .pay-methods__legal-title {
-  margin-bottom: 8px;
-  font-size: 19px;
+  margin-bottom: 10px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.3;
   color: #17161a;
 }
 
 .pay-methods__legal-text {
-  margin-bottom: 24px;
-  max-width: 720px;
+  max-width: 420px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.5;
   color: #57534c;
 }
 
 .pay-methods__tax-label {
   margin-bottom: 14px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 18px;
-  letter-spacing: 1.44px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #8a857c;
 }
 
 .pay-methods__tax-options {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
 }
 
 .pay-methods__tax-item {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid #ebe7df;
+}
+
+.pay-methods__tax-item:last-child {
+  padding-bottom: 0;
 }
 
 .pay-methods__tax-check {
   flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  margin-top: 2px;
-  background: #fff1e6;
-  border: 1px solid #f0dbc2;
-  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
   color: #f5871f;
-}
-
-.pay-methods__tax-check svg {
-  width: 12px;
-  height: 12px;
 }
 
 .pay-methods__tax-info b {
@@ -235,61 +267,51 @@
 
 /* ===== pay-flow ===== */
 .pay-flow {
-  padding: 92px 0;
-  background: #141417;
-}
-
-.pay-flow .container {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding: 80px 0 92px;
+  background: #0b0b0b;
 }
 
 .pay-flow__title {
   margin-bottom: 36px;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 800;
-  line-height: 48px;
-  letter-spacing: -1.05px;
-  color: #f3f0ea;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
 }
 
 .pay-flow__grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .pay-flow__step {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0 28px;
-  border-left: 1px solid #2c2c33;
-}
-
-.pay-flow__step:first-child {
-  padding-left: 0;
-  border-left: none;
 }
 
 .pay-flow__num {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.48;
-  color: #f5871f;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-orange);
 }
 
 .pay-flow__step-title {
-  font-size: 17.5px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
-  color: #f3f0ea;
+  line-height: 1.3;
+  color: var(--color-white);
 }
 
 .pay-flow__step-text {
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
-  color: #b7b3ac;
+  line-height: 1.5;
+  color: var(--color-text-muted);
 }
 
 /* ===== pay-secure ===== */

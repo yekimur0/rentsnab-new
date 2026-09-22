@@ -1,0 +1,242 @@
+.cert-hero {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  background: #0d0d0f;
+}
+
+.cert-hero__media {
+  position: absolute;
+  inset: 0;
+}
+
+.cert-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.cert-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 6, 4, 0.88) 0%,
+      rgba(8, 6, 4, 0.55) 42%,
+      rgba(8, 6, 4, 0.18) 72%,
+      rgba(8, 6, 4, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 6, 4, 0.12) 0%,
+      rgba(8, 6, 4, 0.08) 55%,
+      rgba(8, 6, 4, 0.4) 100%
+    );
+}
+
+.cert-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.cert-hero__title {
+  max-width: 760px;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.cert-hero__text {
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.cert-proof {
+  padding: 80px 0;
+  background: #0b0b0b;
+}
+
+.cert-proof__inner {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.cert-proof__label,
+.cert-docs__label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+}
+
+.cert-proof__title {
+  margin-bottom: 14px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.cert-proof__text {
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.cert-proof__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-proof__item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px 22px;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+}
+
+.cert-proof__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  color: var(--color-orange);
+  background: #2a1608;
+  border-radius: 12px;
+}
+
+.cert-proof__item h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.cert-proof__item p {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.cert-docs {
+  padding: 40px 0 100px;
+  background: #111111;
+}
+
+.cert-docs__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.cert-docs__title {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.cert-docs__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.cert-docs__all {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-orange);
+  white-space: nowrap;
+}
+
+.cert-docs__all:hover {
+  color: var(--color-orange-hover);
+}
+
+.cert-docs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.cert-docs__card {
+  overflow: hidden;
+  background: #fbfaf7;
+  border-radius: 20px;
+}
+
+.cert-docs__preview {
+  height: 280px;
+  background: #ece7dc;
+}
+
+.cert-docs__preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.cert-docs__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px 18px;
+}
+
+.cert-docs__meta h3 {
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.cert-docs__meta p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #8a8a8a;
+}
+
+.cert-docs__download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  font-size: 16px;
+  color: var(--color-orange);
+  background: #fff1e6;
+  border-radius: 8px;
+}

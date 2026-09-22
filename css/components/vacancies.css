@@ -1,0 +1,378 @@
+/* ── Vacancies Hero ── */
+.vac-hero {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  background: #1a120c;
+}
+
+.vac-hero__media {
+  position: absolute;
+  inset: 0;
+}
+
+.vac-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.vac-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8,6,4,0.88) 0%, rgba(8,6,4,0.55) 42%, rgba(8,6,4,0.18) 72%, rgba(8,6,4,0.08) 100%),
+    linear-gradient(180deg, rgba(8,6,4,0.12) 0%, rgba(8,6,4,0.08) 55%, rgba(8,6,4,0.4) 100%);
+}
+
+.vac-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.vac-hero__title {
+  max-width: 760px;
+  margin-bottom: 18px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #f3f0ea;
+}
+
+.vac-hero__text {
+  max-width: 620px;
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #b7b3ac;
+}
+
+/* ── Conditions ── */
+.vac-cond {
+  padding: 92px 0;
+  background: #141417;
+}
+
+.vac-cond__label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f5871f;
+}
+
+.vac-cond__title {
+  margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.05px;
+  color: #f3f0ea;
+}
+
+.vac-cond__subtitle {
+  max-width: 620px;
+  margin-bottom: 36px;
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #b7b3ac;
+}
+
+.vac-cond__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.vac-cond__card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 28px;
+  border: 1px solid #2c2c33;
+  border-radius: 14px;
+}
+
+.vac-cond__card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(245, 135, 31, 0.08);
+  font-size: 20px;
+  font-weight: 700;
+  color: #f5871f;
+}
+
+.vac-cond__card-title {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #f3f0ea;
+}
+
+.vac-cond__card-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b7b3ac;
+}
+
+/* ── Vacancies list ── */
+.vac-list {
+  padding: 92px 0;
+  background: #0d0d0f;
+}
+
+.vac-list__label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f5871f;
+}
+
+.vac-list__title {
+  margin-bottom: 12px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.05px;
+  color: #f3f0ea;
+}
+
+.vac-list__subtitle {
+  max-width: 620px;
+  margin-bottom: 48px;
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #b7b3ac;
+}
+
+.vac-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Single vacancy card ── */
+.vac-card {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 36px;
+  padding: 36px;
+  border: 1px solid #2c2c33;
+  border-radius: 16px;
+}
+
+.vac-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.vac-card__name {
+  font-size: 23px;
+  font-weight: 700;
+  color: #f3f0ea;
+}
+
+.vac-card__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d9700f;
+  background: rgba(217, 112, 15, 0.1);
+  white-space: nowrap;
+}
+
+.vac-card__desc {
+  margin-bottom: 20px;
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #b7b3ac;
+}
+
+.vac-card__req-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #f5871f;
+}
+
+.vac-card__req-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+}
+
+.vac-card__req-item {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #b7b3ac;
+}
+
+.vac-card__req-item::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #f5871f;
+}
+
+.vac-card__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  padding-top: 4px;
+}
+
+.vac-card__salary-label {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #807c75;
+}
+
+.vac-card__salary {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffa24d;
+  text-align: right;
+}
+
+.vac-card__apply {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #fff;
+  background: #f5871f;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.vac-card__apply:hover {
+  background: #e07a1a;
+}
+
+.vac-card__resume {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #b7b3ac;
+}
+
+.vac-card__resume a {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f3f0ea;
+  text-decoration: none;
+}
+
+/* ── CTA ── */
+.vac-cta {
+  padding: 72px 0 80px;
+  background: #0d0d0f;
+}
+
+.vac-cta__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 48px 56px;
+  border-radius: 24px;
+  background: linear-gradient(to right, #ff6a00, #f5871f);
+  box-shadow:
+    0 4px 24px rgba(255, 106, 0, 0.25),
+    0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.vac-cta__title {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1a1005;
+}
+
+.vac-cta__text {
+  max-width: 520px;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #3a2405;
+}
+
+.vac-cta__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.vac-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #1a1005;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.vac-cta__btn:hover {
+  background: #0d0d0f;
+}
+
+.vac-cta__contacts {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2a1a05;
+}
+
+.vac-cta__contacts a {
+  color: inherit;
+  text-decoration: none;
+}
