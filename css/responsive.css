@@ -44,6 +44,7 @@
 
 /* ═══════════ max-width: 1280px ═══════════ */
 @media (max-width: 1280px) {
+  .container { padding: 0 32px; }
   .header__benefits { gap: 24px; }
   .nav__list { gap: 18px; }
   .megamenu__item { width: calc(50% - 7px); }
@@ -51,6 +52,7 @@
 
 /* ═══════════ max-width: 1024px ═══════════ */
 @media (max-width: 1024px) {
+  .container { padding: 0 24px; }
 
   /* Header */
   .header__benefits { display: none; }
