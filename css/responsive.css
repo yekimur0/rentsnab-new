@@ -260,7 +260,7 @@
   .header__contacts { margin-left: auto; }
   .header__callback { display: none; }
   .header__phone { font-size: 16px; }
-  .btn.btn--orange { display: none; }
+  .header__inner .btn.btn--orange { display: none; }
   .burger { display: flex; }
 
   /* ── Nav — mobile drawer ── */
@@ -638,4 +638,180 @@
   .hist-lic__grid { grid-template-columns: 1fr; }
 
   .about-quote__text::before { font-size: 32px; }
+}
+
+/* ══════════════════════════════════════
+   Mobile polish — all pages, down to 375px
+   ══════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  body { overflow-x: clip; }
+
+  .prod-related__card,
+  .obj-related__card,
+  .art-related__card,
+  .blog-grid__card,
+  .prod-reviews__card { height: auto; }
+
+  .art-body__sidebar { position: static; }
+  .art-cta__box,
+  .prod-cta__box { padding: 36px 28px; flex-direction: column; text-align: center; gap: 20px; }
+
+  .vac-cond__grid { grid-template-columns: repeat(2, 1fr); }
+  .ct-contact__cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  /* Section rhythm */
+  section[class]:not([class*="hero"]) { padding-top: 48px; padding-bottom: 48px; }
+  [class*="hero__inner"] { min-height: 0; }
+
+  /* Section headings */
+  section h2[class]:not(.dlv-req__col-title):not(.rent-calc__title) {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+  }
+  section h2[class*="cta__title"],
+  section h2.blog-sub__title,
+  section h2.promo-featured__title,
+  section h2.rent-seo__title { font-size: 24px; line-height: 30px; }
+  section h1[class] { overflow-wrap: break-word; }
+
+  /* Head rows: title + "all" link stack vertically */
+  .catalog__head, .equipment__head, .machinery__head, .scaffolding__head,
+  .cert-docs__head, .hist-systems__head, .rent-catalog__head, .rent-delivery__head,
+  .rent-reviews__head, .obj-gallery__header, .prod-reviews__head,
+  .guarantees__docs-head, .compare__banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .compare__banner { align-items: stretch; text-align: left; }
+  .art-hero__meta, .team-hero__futures { flex-wrap: wrap; gap: 12px 20px; }
+  .team-garant__card { flex-direction: column; gap: 14px; }
+
+  /* CTA boxes */
+  [class*="cta__box"] { padding: 28px 20px; }
+  [class*="cta__actions"] { align-items: center; width: 100%; }
+
+  /* Big numbers & decorative marks */
+  .about-mission__num, .blog-popular__num, .dlv-factors__num, .dlv-return__num,
+  .hist-about__stat-val, .obj-trr__stat-num, .obj-work__step-num,
+  .team-hero__future .number, .delivery__facts b { font-size: 26px; line-height: 1.15; }
+  .hw-reviews__quote-mark, .reviews__quote, .obj-review__icon { font-size: 28px; }
+
+  /* Grids */
+  .ct-contact__cards,
+  .ct-contact__addresses,
+  .vac-cond__grid,
+  .vac-card__req-list,
+  .hw-docs__grid { grid-template-columns: 1fr; }
+  .footer__nav { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .promo-benifit__grid { grid-template-columns: 1fr; }
+  .team-steps__list { grid-template-columns: 1fr; }
+  .hw-why__image { flex: 1 1 100%; }
+
+  /* Media heights */
+  .art-hero__cover { height: 240px; }
+  .art-figure__img { height: 220px; }
+  .prod-hero__main-img { height: 300px; }
+  .blog-featured__img { height: 220px; }
+
+  /* Tables scroll horizontally */
+  .compare__table-wrap,
+  .rent-compare__table-wrap,
+  .rent-prices__table-wrap,
+  .prod-sizes__table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .compare__table,
+  .rent-compare__table,
+  .rent-prices__table,
+  .prod-sizes__table { min-width: 600px; }
+  .compare__table th, .compare__table td,
+  .rent-compare__table th, .rent-compare__table td,
+  .rent-prices__table th, .rent-prices__table td,
+  .prod-sizes__table th, .prod-sizes__table td { padding: 12px 14px; font-size: 13.5px; }
+
+  /* Space-between rows: allow wrapping */
+  .catalog__card-bottom, .hist-systems__card-bottom, .rent-card__bottom,
+  .scaffolding__bottom, .prod-related__card-bottom, .blog-grid__card-footer,
+  .equipment__meta, .cert-docs__meta, .obj-card__row, .rent-calc__result,
+  .pay-methods__tax-item, .pay-methods__card-top, .svc-services__card-head,
+  .rent-reviews__top, .prod-spec__row, .pay-modal__header {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+  .faq__question, .hw-faq__question { gap: 12px; }
+
+  /* Modals */
+  .pay-modal { padding: 28px 20px; }
+
+  /* Inputs: 16px avoids iOS zoom on focus */
+  input, select, textarea { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  section[class]:not([class*="hero"]) { padding-top: 40px; padding-bottom: 40px; }
+
+  section h1[class] { font-size: 28px; line-height: 34px; }
+  section h2[class]:not(.dlv-req__col-title):not(.rent-calc__title) { font-size: 24px; line-height: 30px; }
+  section h2[class*="cta__title"],
+  section h2.blog-sub__title,
+  section h2.promo-featured__title,
+  section h2.rent-seo__title { font-size: 21px; line-height: 27px; }
+
+  /* Buttons: full width, allow wrap */
+  .btn { white-space: normal; text-align: center; }
+  section .btn, [class*="cta__btn"], [class*="hero__btn"],
+  .compare__banner-btn, .vac-card__apply, .ct-contact__btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+  }
+  [class*="__actions"] {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  /* Header fits 375px: logo + phone + burger */
+  .header__inner { gap: 10px; }
+  .logo { gap: 8px; }
+  .logo__desc { display: none; }
+  .header__phone { font-size: 13.5px; }
+
+  /* Grids */
+  .calculator__types,
+  .rent-calc__row,
+  .rent-estimate__row,
+  .request__row,
+  .pay-methods__legal,
+  .projects__stats { grid-template-columns: 1fr; }
+  .guarantees__certs { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .footer__nav { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .rent-delivery__item { grid-template-columns: 40px 1fr; }
+  .rent-delivery__term { grid-column: 2; white-space: normal; }
+
+  /* Media heights */
+  .prod-hero__main-img { height: 260px; }
+  .art-hero__cover { height: 200px; }
+  .blog-featured__img { height: 200px; }
+
+  /* Tighter card paddings */
+  [class*="cta__box"] { padding: 24px 16px; }
+  .req-popup, .pay-modal { padding: 24px 16px; }
+  .calculator__input { padding-right: 72px; }
+}
+
+@media (max-width: 380px) {
+  .container { padding: 0 12px; }
+  .logo__icon { width: 30px; height: 30px; }
+  .logo__name { font-size: 14px; }
+  .header__phone { font-size: 12.5px; }
+  .burger { width: 32px; height: 32px; }
+  section h1[class], .hero__title { font-size: 24px; line-height: 30px; }
+  section h2[class]:not(.dlv-req__col-title):not(.rent-calc__title) { font-size: 22px; line-height: 28px; }
 }
