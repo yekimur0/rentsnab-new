@@ -804,6 +804,118 @@
   [class*="cta__box"] { padding: 24px 16px; }
   .req-popup, .pay-modal { padding: 24px 16px; }
   .calculator__input { padding-right: 72px; }
+
+  .delivery__inner {
+    grid-template-columns: 1fr;
+  }
+  .about-mission__card {
+    padding: 0;
+    border-left: none;
+  }
+  .about-numbers__item + .about-numbers__item {
+    padding-left: 0;
+  }
+  .about-numbers__grid  {
+    gap: 20px;
+  }
+  .about-timeline__grid  {
+        gap: 20px;
+  }
+  .about-timeline__item {
+    flex: auto;
+    padding-left: 0;
+  }
+
+  .art-toc {
+    margin-bottom: 24px;
+  }
+
+  .blog-sub__btn {
+    margin-top: 20px;
+  }
+
+  .dlv-factors__grid {
+    gap: 20px;
+  }
+  .dlv-factors__card {
+    padding-left: 0;
+  }
+  .dlv-order__grid {
+    gap: 20px;
+  }
+  .dlv-order__step {
+    padding-left: 0;
+  }
+
+  .dlv-return__grid {
+    gap: 20px;
+  }
+
+  .dlv-return__step {
+    padding-left: 0;
+  }
+
+  .hist-about__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .hist-about__stat {
+    padding: 0;
+    border: none;
+  }
+  .hist-how__grid {
+    gap: 20px;
+  }
+
+  .hist-how__step {
+    padding-left: 0;
+  }
+
+  .hw-why__card-icon {
+    position: static;
+    transform: translateY(0);
+  }
+
+  .hw-why__card {
+    padding: 15px;
+  }
+
+  .obj-hero__crumbs {
+    flex-wrap: wrap;
+  }
+  .obj-trr__stats  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .obj-gallery__thumb {
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .obj-gallery__list {
+    overflow: auto;
+  }
+
+  .obj-review__icon {
+    display: none;
+  }
+  .pay-methods__group-header {
+    flex-wrap: wrap;
+  }
+
+  .svc-steps__grid {
+    gap: 20px;
+  }
+
+  .svc-steps__item {
+    padding: 0;
+  }
+
+  .svc-form__sidebar {
+    padding: 16px;
+  }
 }
 
 @media (max-width: 380px) {
